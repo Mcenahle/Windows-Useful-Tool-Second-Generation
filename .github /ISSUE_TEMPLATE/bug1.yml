@@ -1,0 +1,19 @@
+name: "程序 bug 问题"
+description: "程序出现了 bug 问题。"
+labels: [· Bug, 新反馈]
+body:
+- type: checkboxes
+  id: "yml-1"
+  attributes:
+    label: "检查项"
+    description: "请逐个检查下列项目，并勾选确认。"
+    options:
+    - label: "我已在 [无法修复的 bug 类型](https://mcenahle.com/wutg2_app_no_fix_bug/) 中搜索，确认了这一 Bug 未被提交过。"
+      required: true
+- type: textarea
+  id: "yml-2"
+  attributes:
+    label: 描述
+    description: "详细描述具体表现。"
+  validations:
+    required: true
